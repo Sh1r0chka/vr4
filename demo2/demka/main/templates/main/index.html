@@ -1,0 +1,51 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'css/index.css' %}">
+    <title> {% block title %}{% endblock %} </title>
+</head>
+
+<body>
+    <div class="banner">
+        <div class="bar">
+            <div class="logo">
+                <h1>VOLVO TRUCK</h1>
+            </div>
+            <div class="buttons">
+                <button><h3></р3><a href="{% url 'login' %}">Авторизация</a></h3></button>
+                <button><h3></р3><a href="{% url 'signup' %}">Регистрация</a></h3></button>
+            </div>
+        </div>
+        <div class="video-background">
+            <video autoplay muted loop id="myVideo">
+                <source src="https://kinescope.io/embed/vF6GSap4RtmABxU84Vz7SE" type="video/mp4">
+            </video>
+        </div>
+    </div>
+
+    <div class="line"></div>
+
+
+
+    <div class="line-2"></div>
+
+    <div class="footer">
+        <div class="logo">
+            <h1>VOLVO TRUCK</h1>
+        </div>
+        <div class="img2">
+            <h2>Volvo@gmail.com</h2>
+        </div>
+        <div class="img3">
+            <h2>+7 (968) 714-4502</h2>
+        </div>
+    </div>
+
+</body>
+
+</html>
